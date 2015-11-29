@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
       <link href="css/custom.css" rel="stylesheet">
 
-  
+  <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="fontawesome/css/font-awesome.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -266,31 +267,42 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
+  <div class="col-md-7">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
     </div>
     <div class="collapse navbar-collapse text-center" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#about">CARA BELANJA</a></li>
         <li><a href="#services">SERVICES</a></li>
-        <li><a href="#produk">Product</a></li>
-        <li><a href="#pricing">PRICING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+        <li><a href="#produk">PRODUK</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">KATEGORI <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#section41">Section 4-1</a></li>
-              <li><a href="#section42">Section 4-2</a></li>
+              <li><a href="#section41">KATEGORI a</a></li>
+              <li><a href="#section42">KATEGORI b</a></li>
             </ul>
           </li>
       </ul>
-      
-  
     </div>
+    </div>
+    
+    <div class="col-sm-2 pull-right">
+  <!-- NAVBAR RIGHT -->
+     <div class="row">
+     <div class="col-md-2"></div>
+     <div class="col-md-5">
+      <a href="#"><i class="glyphicon glyphicon-user"></i> DAFTAR</a>
+        </div>
+        <div class="col-md-5">
+        <a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a>
+      <div class="col-md-5">
+    </div>
+    
   </div>
 </nav>
 <!-- END OF NAVBAR -->
@@ -307,6 +319,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
   </div>
 </div>
 
+<span class="col-sm-2 pull-right"><a href="#">cart</a></span>
 <div class="col-sm-7">
     <form class="form-inline" method="post" action="hai.php">
   <div class="col-sm-5">
@@ -320,18 +333,15 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
       <button type="submit" class="btn btn-danger"><i class="glyphicon glyphicon-search"></i></button>
   </div>
   </form>
-</div>
+</div> 
 
 <div class="col-sm-2 pull-right">
   <!-- NAVBAR RIGHT -->
-          <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Daftar baru</a></li>
-         <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
-      </ul>
+ <a href="#"><i class="fa fa-cart fa-shopping-cart fa-2x"></i></a>
      
 </div>
 
-</div>
+</div><br>
 </div>
 <!-- END OF CART N OGIN AREA -->
 
@@ -483,28 +493,28 @@ for($i=1;$i<=4;$i++){
     
     <!-- Service bottom -->
  <div id="services" class="container-fluid text-center">
-  <h2>SERVICES</h2>
+  <h2>MENGAPA MEMILIH PRODUK KAMI ?</h2>
  
   <div class="row slideanim">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>KUALITAS KULIT ASLI</h4>
       <p>Lorem ipsum dolor sit amet..</p>
       <p>Lorem ipsum dolor sit amet..</p>
       <p>Lorem ipsum dolor sit amet..</p>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>HARGA BERSAING DAN MURAH</h4>
       <p>Lorem ipsum dolor sit amet..</p>
       <p>Lorem ipsum dolor sit amet..</p>
       <p>Lorem ipsum dolor sit amet..</p>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>DI KERJAKAN DENGAN TELITI</h4>
       <p>Lorem ipsum dolor sit amet..</p>
       <p>Lorem ipsum dolor sit amet..</p>
       <p>Lorem ipsum dolor sit amet..</p>
@@ -512,28 +522,12 @@ for($i=1;$i<=4;$i++){
     </div>
   </div>
   <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
+  
 </div>
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey" style="background:#f5f5f5">
-  <h2 class="text-center">CONTACT</h2>
+  <h2 class="text-center">CONTACT US</h2>
   <div class="row">
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you</p>
@@ -571,7 +565,15 @@ for($i=1;$i<=4;$i++){
 </ul>
 </div>
 
-<div class="col-sm-5">About us</div>
+<div class="col-sm-5">
+
+<ul>
+<li><a href="#">BANK bri</a>
+<li><a href="#">BCA</a>
+<li><a href="#">MANDIRI</a>
+</ul>
+
+</div>
 
 <div class="col-sm-3">
 Copy Right &reg; Jennifer Wallet 20015
