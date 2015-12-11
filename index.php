@@ -210,6 +210,12 @@
         <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="#pricing">PRICING</a></li>
         <li><a href="#contact">CONTACT</a></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Section 4-1</a></li>
+              <li><a href="#section42">Section 4-2</a></li>
+            </ul>
+          </li>
       </ul>
     </div>
   </div>
@@ -320,7 +326,7 @@
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
+<div id="portfolio" class="container-fluid text-center bg-grey" style="background-color:#3CC">
   <h2>Portfolio</h2><br>
   <h4>What we have created</h4>
   <div class="row text-center slideanim">
@@ -347,8 +353,13 @@
     </div>
   </div><br>
   
-  <h2>What our customers say</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  
+  
+</div>
+<!--  slider bottom -->
+
+<h2>What our customers say</h2>
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel" style="background-color:#FCC">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -379,7 +390,8 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div>
+<!-- end of slider -->
+
 
 <!-- Container (Pricing Section) -->
 <div id="pricing" class="container-fluid">
