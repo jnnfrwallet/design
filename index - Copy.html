@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>jQuery Sliding Text on Images</title>
+<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+<script>
+$(document).ready(function() {
+    $('.image-frame').hover(function(){
+		$('.image-caption',this).slideToggle('slow');
+	}, function(){
+		$('.image-caption',this).slideToggle('slow');
+    });
+});
+</script>
+<style>
+.image-frame {
+	float: left;
+margin: 5px;
+position: relative;
+color: #333;
+}
+.labels{
+	border:1px #CCC solid;
+}
+
+.image-frame .image-caption {
+	display: none;
+	position: absolute;
+	bottom: 0px;
+	padding: 5px;
+	background:#F90;
+	width: 290px;
+	opacity: 0.7;
+	}
+</style>
+</head>
+<body>
+	<div class="image-frame">
+		<img src="4.jpg"/>
+        <div class="labels">lorem ipsum dolor sit amet</div>
+		<div class="image-caption">
+		  <h2>Slide1</h2>
+		  Mouse over Slide 1 to view the caption.
+		</div>
+	</div>
+	<div class="image-frame">
+		<img src="2.jpg"/>
+		<div class="image-caption">
+		  <h2>Slide2</h2>
+		  Mouse over Slide 2 to view the caption.
+		</div>
+	</div>
+</body>
+</html>
