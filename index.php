@@ -41,7 +41,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
   .jumbotron {
       background-color: #f4511e;
       color: #fff;
-      padding: 100px 25px;
+      padding: 10px 25px;
       font-family: Montserrat, sans-serif;
   }
   .container-fluid {
@@ -62,7 +62,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
       padding: 0 0 15px 0;
       border: none;
       border-radius: 0;
-	  border:1px #F00 solid;
+	  border: 1px rgba(204, 204, 204, 0.72) solid;
+	  position:relative;
+	  
+  }
+    .thumbnail:hover {
+	  border:1px #BB005E solid;
   }
   .thumbnail img {
       width: 100%;
@@ -185,7 +190,22 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
     right: 0;
     left: 0;
 }
-
+.fff IMG{
+	height:200px;
+	width:200px;
+}
+.footer{
+	background: #333;
+    color: white;
+	text-align:left;
+}
+.footer ul li a{
+	color:#FFF;
+}
+.footer ul li{ list-style:circle}
+.footer ul li:hover{
+	margin-left:10px;
+}
 /*
 	#myCarousel::before{
 		content:' ';
@@ -240,6 +260,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
     }
   }
   </style>
+
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -367,200 +388,85 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 <!-- Product or Content Section -->
 <div id="produk" class="container-fluid text-center bg-grey" style="background:#EBEBEB">
   <div class="row text-center slideanim">
+  <?php 
+  for($i=0;$i<11;$i++){
+	  ?>
     <div class="col-sm-3">
       <div class="thumbnail">
         <img src="assets/1.jpg" alt="Paris" width="400" height="300" class="img">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
+        <h3 class="text-primary"><strong>Dompet Kulit</strong></h3>
+        
+        <h5>Diskon <span class="label label-danger"><strong>- 5%</strong></span></h5>
+        <label class="text-danger"><strike>Rp. 300.00</strike></label>
+        <h5 class="text-primary"><strong>Rp. 300.00</strong></h5>
       </div>
     </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="assets/2.jpg" alt="New York" width="400" height="300" class="img">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="assets/2.jpg" alt="New York" width="400" height="300" class="img">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="assets/2.jpg" alt="New York" width="400" height="300" class="img">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>    
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <img src="assets/1.jpg" alt="San Francisco" width="400" height="300" class="img">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
+	<?php } ?>
+
   </div>
 </div>
+<div class="pagination pull-right">
+  <ul class="pagination">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+  	</ul>
+  </div>
+    
 <!-- end of product-->
 
 <!-- Container (Pricing Section) -->
-<div class="container">
-	<div class="col-xs-12">
-	
-		<div class="page-header">
+<div class="container-fluid">
+		
 <h3 class="text-center"><span class="label label-warning">Best Buy !</span></h3>	
-		</div>
+		
+<div class="carousel slide" id="my_Carousel">
+
+	<div class="carousel-inner col-xs-12">
 			
-		<div class="carousel slide" id="my_Carousel">
-			<div class="carousel-inner col-xs-12">
-				<div class="item active">
-					<ul class="thumbnails">
-						<li class="col-sm-3 col-xs-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                 <div class="desc-caption">
-                           <p>lorem ispum dolor sit amet dolor sit</p>
-                 </div>                                     
-								</div>
-						
-							</div>
-						</li>
-						<li class="col-sm-3 col-xs-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                   <div class="desc-caption">
-                           <p>lorem ispum dolor sit amet dolor sit</p>
-                 </div> 
-								</div>
-					
-							</div>
-						</li>
-						<li class="col-sm-3 col-xs-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                 <div class="desc-caption">
-                           <p>lorem ispum dolor sit amet dolor sit</p>
-                 </div>                                   
-								</div>
-								
-							</div>
-						</li>
-						<li class="col-sm-3 col-xs-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                 <div class="desc-caption">
-                           <p>lorem ispum dolor sit amet dolor sit</p>
-                 </div>    
-								</div>
-							
-							</div>
-						</li>
-					</ul>
-				</div>
-                <!-- /Slide 1 --> 
-				<div class="item">
-					<ul class="thumbnails">
-						<li class="col-sm-3 col-xs-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                 <div class="desc-caption">
-                           <p>lorem ispum dolor sit amet dolor sit</p>
-                 </div>                                     
-								</div>
-
-							</div>
-						</li>
-						<li class="col-sm-3 col-xs-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                  <div class="desc-caption">
-                           <p>lorem ispum dolor sit amet dolor sit</p>
-                 </div>                                    
-								</div>
-								
-							</div>
-						</li>
-						<li class="col-sm-3 col-xs-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                  <div class="desc-caption">
-                           <p>lorem ispum dolor sit amet dolor sit</p>
-                 </div>                                    
-								</div>
-								
-							</div>
-						</li>
-						<li class="col-sm-3 col-xs-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                  <div class="desc-caption">
-                           <p>lorem ispum dolor sit amet dolor sit</p>
-                 </div>                                    
-								</div>
-
-							</div>
-						</li>
-					</ul>
-				</div>
-                <!-- /Slide2 --> 
-				<div class="item">
-					<ul class="thumbnails">
-						<li class="col-sm-3 col-xs-3">	
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                 <div class="desc-caption">
-                           <p>lorem ispum dolor sit amet dolor sit</p>
-                 </div>                                     
-								</div>
-							
-							</div>
-						</li>
-						<li class="col-sm-3 col-xs-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                   <div class="desc-caption">
-                           <p>lorem ispum dolor sit amet dolor sit</p>
-                 </div>                                   
-								</div>
-			
-							</div>
-						</li>
-						<li class="col-sm-3 col-xs-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
- <p>Nullam Condimentum Nibh Etiam Sem</p                                   
-								></div>
-	
-							</div>
-						</li>
-						<li class="col-sm-3 col-xs-3">
-							<div class="fff">
-								<div class="thumbnail">
-									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
-                 <div class="desc-caption">
-                           <p>lorem ispum dolor sit amet dolor sit</p>
-                 </div>                                     
-								</div>
-
-							</div>
-						</li>
-					</ul>
-				</div><!-- /Slide3 --> 
+ <div class="item active">
+<ul class="thumbnails">	
+ <!-- SLIDE 1 --> 
+	<?php 
+for($i=1;$i<=4;$i++){
+	?>	
+    
+<li class="col-sm-3 col-xs-3">
+			<div class="fff">
+			<div class="thumbnail">
+			<a href="#"><img src="assets/2.jpg" alt=""></a>
+             <div class="desc-caption">
+             <p class="text-center">jennifer wallet produk</p>
+             </div>
+             </div>
 			</div>
+			</li>
+              <?php } ?>
+			</ul>
+</div>
+ <!-- END OF 1 -->                     
+       <!-- /Slide2 --> 
+<div class="item">
+<ul class="thumbnails">
+	<?php 
+for($i=1;$i<=4;$i++){
+	?>	
+		<li class="col-sm-3 col-xs-3">	
+		<div class="fff">
+		<div class="thumbnail">
+		<a href="#"><img src="assets/2.jpg" alt=""></a>
+         <div class="desc-caption">
+          <p>lorem ispum dolor sit amet dolor sit</p>
+         </div>                                     
+		</div>
+		</div>
+        <?PHP } ?>
+		</li>
+        </ul>
+	</div><!-- /Slide3 --> 
+	</div>
 			
 		   <nav>
 				<ul class="control-box pager">
@@ -571,7 +477,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 		   <!-- /.control-box -->   
 								  
 		</div><!-- /#my_Carousel -->
-	</div><!-- /.col-xs-12 -->     
+	  
 </div>
 <!-- /.container -->
     
@@ -626,7 +532,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey" style="background:#0A5">
+<div id="contact" class="container-fluid bg-grey" style="background:#f5f5f5">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
@@ -647,7 +553,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <button class="btn btn-primary btn-large pull-right jumbotron" type="submit">Send</button>
         </div>
       </div>	
     </div>
@@ -655,72 +561,63 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 </div>
 
 
-<footer class="container-fluid text-center" style="background:#400040">
+<footer class="container-fluid text-center footer">
 <div class="row">
-<div class="col-sm-4">lorem ipsum dolor sit amet</div>
-<div class="col-sm-4">About us</div>
-<div class="col-sm-4">External Link</div>
+<div class="col-sm-4">
+<ul>
+<li><a href="#">Cara Berbelanja di web</a>
+<li><a href="#">Tentang Kami</a>
+<li><a href="#">Syarat dan ketentuan belanja</a>
+</ul>
+</div>
+
+<div class="col-sm-5">About us</div>
+
+<div class="col-sm-3">
+Copy Right &reg; Jennifer Wallet 20015
+</div>
 </div>	
 </footer>
 
 
 
 <!-- For modal form -->
-
-  <div class="col-sm-5 modal fade" id="myModal" role="dialog">
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" style="margin-top:10%">
     <div class="modal-dialog">
-    <form method="post" action="indexx.php">
+    <form method="post" action="ncfkasnc">
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+          <h4 class="modal-title text-center"><i class="glyphicon glyphicon-user"></i> &nbsp; Form Login</h4>
         </div>
         <div class="modal-body">
+         <div class="row">
+         <label for="email" class="col-sm-12">Email</label>
+         <div class="col-sm-12">
+         <input type="email" class="form-control" name="email">
+         </div>
+         <label for="pas" class="col-sm-12">Password</label>
+         <div class="col-sm-12">
+         <input type="password" class="form-control" name="pas">
+         </div>
+         </div>
+        </div>
+        <div class="modal-footer te">
         
-<div class="form-group">
-         <label class="col-sm-3 control-label">Password</label>
-         <div class="col-sm-9">
-         <input name="ps" type="password" required class="form-control" id="persen" placeholder="password" value="">
-         </div>
-        <div class="clearfix"></div>
- </div>
- <div class="form-group">
-         <label class="col-sm-3 control-label">Password</label>
-         <div class="col-sm-9">
-         <input name="ps" type="password" required class="form-control" id="persen" placeholder="password" value="">
-         </div>
-        <div class="clearfix"></div>
- </div>
- <div class="form-group">
-         <label class="col-sm-3 control-label">Password</label>
-         <div class="col-sm-9">
-         <input name="ps" type="password" required class="form-control" id="persen" placeholder="password" value="">
-         </div>
-        <div class="clearfix"></div>
- </div>
- <div class="form-group">
-         <label class="col-sm-3 control-label">Password</label>
-         <div class="col-sm-9">
-         <input name="ps" type="password" required class="form-control" id="persen" placeholder="password" value="">
-         </div>
-        <div class="clearfix"></div>
- </div>
-
- 
- </div>
-       
-       
-        
- <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary">Login Now</button>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+         
 
         </div>
       </div>
-   </form>  
+      </form>
     </div>
   </div>
+  
+</div>
+
 
 
 <script>
