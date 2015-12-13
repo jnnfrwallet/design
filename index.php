@@ -69,10 +69,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
       height: 100%;
       margin-bottom: 10px;
   }
-    .thumbnail:hover IMG{
-		height:100px;
-		width:100px;
-  }
+
   .carousel-control.right, .carousel-control.left {
       background-image: none;
       color: #f4511e;
@@ -189,6 +186,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
     left: 0;
 }
 
+/*
 	#myCarousel::before{
 		content:' ';
 		color:#FC3;
@@ -199,6 +197,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 		position:absolute;
 		z-index:1000;
 	}
+
+*/
 /* FOR SLIDER BOTTOM */
 
 
@@ -369,86 +369,42 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
   <div class="row text-center slideanim">
     <div class="col-sm-3">
       <div class="thumbnail">
-        <img src="assets/1.jpg" alt="Paris" width="400" height="300">
+        <img src="assets/1.jpg" alt="Paris" width="400" height="300" class="img">
         <p><strong>Paris</strong></p>
         <p>Yes, we built Paris</p>
       </div>
     </div>
     <div class="col-sm-3">
       <div class="thumbnail">
-        <img src="assets/2.jpg" alt="New York" width="400" height="300">
+        <img src="assets/2.jpg" alt="New York" width="400" height="300" class="img">
         <p><strong>New York</strong></p>
         <p>We built New York</p>
       </div>
     </div>
     <div class="col-sm-3">
       <div class="thumbnail">
-        <img src="assets/2.jpg" alt="New York" width="400" height="300">
+        <img src="assets/2.jpg" alt="New York" width="400" height="300" class="img">
         <p><strong>New York</strong></p>
         <p>We built New York</p>
       </div>
     </div>
     <div class="col-sm-3">
       <div class="thumbnail">
-        <img src="assets/2.jpg" alt="New York" width="400" height="300">
+        <img src="assets/2.jpg" alt="New York" width="400" height="300" class="img">
         <p><strong>New York</strong></p>
         <p>We built New York</p>
       </div>
     </div>    
     <div class="col-sm-3">
       <div class="thumbnail">
-        <img src="assets/1.jpg" alt="San Francisco" width="400" height="300">
+        <img src="assets/1.jpg" alt="San Francisco" width="400" height="300" class="img">
         <p><strong>San Francisco</strong></p>
         <p>Yes, San Fran is ours</p>
       </div>
     </div>
   </div>
 </div>
-
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-</div>
-
-
-
+<!-- end of product-->
 
 <!-- Container (Pricing Section) -->
 <div class="container">
@@ -459,10 +415,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 		</div>
 			
 		<div class="carousel slide" id="my_Carousel">
-			<div class="carousel-inner">
+			<div class="carousel-inner col-xs-12">
 				<div class="item active">
 					<ul class="thumbnails">
-						<li class="col-sm-3">
+						<li class="col-sm-3 col-xs-3">
 							<div class="fff">
 								<div class="thumbnail">
 									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
@@ -473,7 +429,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 						
 							</div>
 						</li>
-						<li class="col-sm-3">
+						<li class="col-sm-3 col-xs-3">
 							<div class="fff">
 								<div class="thumbnail">
 									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
@@ -484,7 +440,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 					
 							</div>
 						</li>
-						<li class="col-sm-3">
+						<li class="col-sm-3 col-xs-3">
 							<div class="fff">
 								<div class="thumbnail">
 									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
@@ -495,7 +451,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 								
 							</div>
 						</li>
-						<li class="col-sm-3">
+						<li class="col-sm-3 col-xs-3">
 							<div class="fff">
 								<div class="thumbnail">
 									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
@@ -511,7 +467,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
                 <!-- /Slide 1 --> 
 				<div class="item">
 					<ul class="thumbnails">
-						<li class="col-sm-3">
+						<li class="col-sm-3 col-xs-3">
 							<div class="fff">
 								<div class="thumbnail">
 									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
@@ -522,7 +478,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 
 							</div>
 						</li>
-						<li class="col-sm-3">
+						<li class="col-sm-3 col-xs-3">
 							<div class="fff">
 								<div class="thumbnail">
 									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
@@ -533,7 +489,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 								
 							</div>
 						</li>
-						<li class="col-sm-3">
+						<li class="col-sm-3 col-xs-3">
 							<div class="fff">
 								<div class="thumbnail">
 									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
@@ -544,7 +500,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 								
 							</div>
 						</li>
-						<li class="col-sm-3">
+						<li class="col-sm-3 col-xs-3">
 							<div class="fff">
 								<div class="thumbnail">
 									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
@@ -560,7 +516,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
                 <!-- /Slide2 --> 
 				<div class="item">
 					<ul class="thumbnails">
-						<li class="col-sm-3">	
+						<li class="col-sm-3 col-xs-3">	
 							<div class="fff">
 								<div class="thumbnail">
 									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
@@ -571,7 +527,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 							
 							</div>
 						</li>
-						<li class="col-sm-3">
+						<li class="col-sm-3 col-xs-3">
 							<div class="fff">
 								<div class="thumbnail">
 									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
@@ -582,7 +538,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 			
 							</div>
 						</li>
-						<li class="col-sm-3">
+						<li class="col-sm-3 col-xs-3">
 							<div class="fff">
 								<div class="thumbnail">
 									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
@@ -591,7 +547,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 	
 							</div>
 						</li>
-						<li class="col-sm-3">
+						<li class="col-sm-3 col-xs-3">
 							<div class="fff">
 								<div class="thumbnail">
 									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
@@ -616,10 +572,58 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 								  
 		</div><!-- /#my_Carousel -->
 	</div><!-- /.col-xs-12 -->     
-</div><!-- /.container -->
+</div>
+<!-- /.container -->
     
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Service bottom -->
+ <div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
  
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>POWER</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+      <p>Lorem ipsum dolor sit amet..</p>
+      <p>Lorem ipsum dolor sit amet..</p>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>LOVE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+      <p>Lorem ipsum dolor sit amet..</p>
+      <p>Lorem ipsum dolor sit amet..</p>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>JOB DONE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+      <p>Lorem ipsum dolor sit amet..</p>
+      <p>Lorem ipsum dolor sit amet..</p>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+</div>
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey" style="background:#0A5">
@@ -661,8 +665,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 
 
 
-<!-- For modal -->
-<!-- Modal -->
+<!-- For modal form -->
 
   <div class="col-sm-5 modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -768,7 +771,10 @@ $(document).ready(function(){
             $('.carousel').carousel({
               interval: 3000
             })
+      
         });
     </script>
+
+
 </body>
 </html>
