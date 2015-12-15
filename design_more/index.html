@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+<script src="bootstrap-3.3.4-dist/js/jquery-1.11.3.min.js"></script>
+<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+
+<style>
+* {
+margin:0;
+padding:0;
+}
+h3,h4{
+color:white;
+font-weight:bold;
+}
+body {
+    padding-top:70px;
+    }
+#hover-cap-4col .thumbnail {
+    position:relative;
+    overflow:hidden;    
+}
+.caption {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    color:#fff !important;
+}
+.item img{
+width:80%;
+max-height:250px;
+margin-right:auto;
+margin-left:auto;
+}
+.tengah {
+margin-top:20px;
+}
+.kiri {
+float:left;
+background-color:red;
+}
+.col-sm-3 img {
+min-height:200px;
+}
+.carousel-inner img{
+height:100%;
+width:100%;
+}
+.sembunyi {
+    position:fixed;
+    left:10px;
+    top:70px;
+    z-index:1000;
+    display:none;
+}
+.tengah {
+text-align:center;
+background-color:#dcedc8;
+}
+#email {
+width:50%;
+margin-left:auto;
+margin-right:auto;
+}
+.bg {
+background-color:#000;
+color:white;
+}
+ul li {
+list-style:none;
+font-weight:bold;
+}
+@media screen and (max-width:460px){
+    p {
+    font-size:12px;
+    }
+}
+</style>
+
+<script>
+$(document).ready(function(){
+        $('.thumbnail').hover(
+        function(){
+        $(this).find('.caption').slideDown(250);
+        },
+        function(){
+        $(this).find('.caption').slideUp(250);
+        }
+        );
+});
+$(".notif").click(function(){
+    $(".sembunyi").fadeIn();
+    function hidelagi(){
+        $(".sembunyi").fadeOut();
+}
+setTimeout(hidelagi,2000);
+});
+</script>
+</head>
+<body>
+<!-- semua code akan diletakkan disini -->
+ <!-- navbar fixed atas -->
+   <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed navbar-default" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href='#'><span class="glyphicon glyphicon glyphicon-shopping-cart"><span> Rp. 10.000</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-left">
+                <input type="text" class="form-control" style="width:100%;"placeholder="Search...">
+            </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">Best Produk</a></li>
+            <li><a href="#contact">How to buy</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Member <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </nav>
+<!-- end off navbar fixed atas -->
+
+<!-- CONTAINER -->
+<div class="container-fluid">
+
+ <!-- baris pertama -->
+<div class='row'>
+        <div class='col-sm-12'>
+            <img src="avatar.jpg" class="img-responsive">
+            <label>nama perushaan</label>
+        </div>
+</div>
+<!-- akhir baris pertama -->
+
+<!-- baris kedua -->
+    <div class="row">
+        <div class="col-sm-8 col-xs-12">
+            <div class="panel panel-success">
+                <div class="panel-heading"><span class="glyphicon glyphicon-star-empty"></span> Our Produk !</div>
+                <div class="panel-body">
+                <!-- bootstrap carousel -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>   
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="user.png">
+                            <div class="carousel-caption">
+                              <h3>Ghebuk </h3>
+                              <p>Lorem ipsum dolor sit amet consectetur…
+                              Lorem ipsum dolor sit amet consectetur…
+                              Lorem ipsum dolor sit amet consectetur…
+                              Lorem ipsum dolor sit amet consectetur…
+                              Lorem ipsum dolor sit amet consectetur…
+                              Lorem ipsum dolor sit amet consectetur…
+                              </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="user.png">
+                            <div class="carousel-caption">
+                              <h3>Rap-Orap</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur…
+                              Lorem ipsum dolor sit amet consectetur…
+                              Lorem ipsum dolor sit amet consectetur…
+                              Lorem ipsum dolor sit amet consectetur…
+                              Lorem ipsum dolor sit amet consectetur…
+                              Lorem ipsum dolor sit amet consectetur…
+                              </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="user.png">
+                            <div class="carousel-caption">
+                              <h3>Krepek Tette</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur…
+                              Lorem ipsum dolor sit amet consectetur…
+                              Lorem ipsum dolor sit amet consectetur…
+                              Lorem ipsum dolor sit amet consectetur…
+                              Lorem ipsum dolor sit amet consectetur…
+                              Lorem ipsum dolor sit amet consectetur…
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+                <!-- end bootsrap carousel -->
+                </div><!-- body panel pertama akhirnya -->
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+        <div class="panel panel-success">
+                <div class="panel-heading"><span class="glyphicon glyphicon-shopping-cart"></span> Cart !</div>
+                <div class="panel-body"> 
+                    <table class="table">
+                        <tr class="success">
+                            <th>Barang </th>
+                            <th>Jumlah </th>
+                        </tr>
+                        <tr>
+                            <td>Krupuk</td>
+                            <td><span class="badge badge-success">2</span></td>
+                        </tr>
+                        <tr>
+                            <td>Nang-nginang</td>
+                            <td><span class="badge badge-success">5</span></td>
+                        </tr>
+                        <tr>
+                            <td>Ghebuk</td>
+                            <td><span class="badge badge-success">3</span></td>
+                        </tr>
+                        <tr>  
+                            <td class="success"></td>
+                            <td class="success"><span class="label label-success">Rp. 10.000 </span></td>
+                        </tr>
+                    </table>
+                    <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal"> View Cart </button>
+                    <button type="button" class="btn btn-success btn-sm"  >Chek Out </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- akhir baris kedua -->
+ 
+<br>
+<!-- baris ketiga -->
+<div class="row"> 
+    <div class="col-xs-6 col-sm-3">   
+    <div  id="hover-cap-4col">
+      <div class="thumbnail">
+        <div class="caption">
+            <h4>Ghebuk</h4>
+            <p>Ghebuk is the most popular food from madura, it is a parotan kelapa dicampur tepung dan sebagainya</p>
+            <p>Rp. 1.000 
+            <button type="button" class="btn btn-warning btn-sm notif">Beli</button>
+            <button type="button" class="btn  btn-success btn-sm">Detail</button>
+            </p>
+        </div>
+        <img src="profile.png" class='img-responsive'>
+      </div>
+    </div>
+    </div>
+    <div class="col-xs-6 col-sm-3">  
+    <div  id="hover-cap-4col">
+      <div class="thumbnail">
+        <div class="caption">
+            <h4>Rap-Orap</h4>
+            <p>Rap-Orap is the most popular food from madura, it is a parotan kelapa</p>
+            <p>Rp. 1.000 
+            <button type="button" class="btn btn-warning btn-sm notif">Beli</button>
+            <button type="button" class="btn btn-success btn-sm">Detail</button>
+            </p>
+        </div>
+        <img src="login.jpg" class='img-responsive'>
+      </div>
+    </div>
+    </div>
+    <div class="col-xs-6 col-sm-3">  
+    <div  id="hover-cap-4col">
+      <div class="thumbnail">
+        <div class="caption">
+            <h4>Krepek Tette</h4>
+            <p>Ghebuk is the most popular food from madura, it is a parotan kelapa</p>
+            <p>Rp. 1.000 
+            <button type="button" class="btn btn-warning btn-sm notif">Beli</button>
+            <button type="button" class="btn btn-success btn-sm">Detail</button>
+            </p>
+            </div>
+        <img src="login.jpg" class='img-responsive'>
+      </div>
+    </div>
+    </div>
+    <div class="col-xs-6 col-sm-3">  
+    <div  id="hover-cap-4col">
+      <div class="thumbnail">
+        <div class="caption">
+            <h4>Tapay</h4>
+            <p>Ghebuk is the most popular food from madura, it is a parotan kelapa</p>
+            <p>Rp. 1.000 
+            <button type="button" class="btn btn-warning btn-sm notif">Beli</button>
+            <button type="button" class="btn btn-success btn-sm">Detail</button>
+            </p>
+        </div>
+        <img src="login.jpg" class='img-responsive'>
+      </div>
+    </div>
+    </div>
+</div>
+<!-- baris ketiga -->
+
+<!-- baris keempat -->
+<div class="row">
+    <div class="col-xs-6 col-sm-3">   
+    <div  id="hover-cap-4col">
+      <div class="thumbnail">
+        <div class="caption">
+            <h4>Ghebuk</h4>
+            <p>Ghebuk is the most popular food from madura, it is a parotan kelapa</p>
+            <p>Rp. 1.000 
+            <button type="button" class="btn btn-warning btn-sm notif">Beli</button>
+            <button type="button" class="btn  btn-success btn-sm">Detail</button>
+            </p>
+        </div>
+        <img src="profile.png" class='img-responsive'>
+      </div>
+    </div>
+    </div>
+    <div class="col-xs-6 col-sm-3">  
+    <div  id="hover-cap-4col">
+      <div class="thumbnail">
+        <div class="caption">
+            <h4>Rap-Orap</h4>
+            <p>Rap-Orap is the most popular food from madura, it is a parotan kelapa</p>
+            <p>Rp. 1.000 
+            <button type="button" class="btn btn-warning btn-sm notif">Beli</button>
+            <button type="button" class="btn btn-success btn-sm">Detail</button>
+            </p>
+        </div>
+        <img src="profile.png" class='img-responsive'>
+      </div>
+    </div>
+    </div>
+    <div class="col-xs-6 col-sm-3">  
+    <div  id="hover-cap-4col">
+      <div class="thumbnail">
+        <div class="caption">
+            <h4>Krepek Tette</h4>
+            <p>Ghebuk is the most popular food from madura, it is a parotan kelapa </p>
+            <p>Rp. 1.000 
+            <button type="button" class="btn btn-warning btn-sm notif">Beli</button>
+            <button type="button" class="btn btn-success btn-sm">Detail</button>
+            </p>
+            </div>
+        <img src="profile.png" class='img-responsive'>
+      </div>
+    </div>
+    </div>
+    <div class="col-xs-6 col-sm-3">  
+    <div  id="hover-cap-4col">
+      <div class="thumbnail">
+        <div class="caption">
+            <h4>Tapay</h4>
+            <p>Ghebuk is the most popular food from madura, it is a parotan kelapa </p>
+            <p>Rp. 1.000 
+            <button type="button" class="btn btn-warning btn-sm notif">Beli</button>
+            <button type="button" class="btn btn-success btn-sm">Detail</button>
+            </p>
+        </div>
+        <img src="profile.png" class='img-responsive'>
+      </div>
+    </div>
+    </div>
+</div>
+<!-- akhir baris keempat -->
+
+
+<!-- baris ke lima -->
+<div class="row">
+    <div class="col-sm-12">
+    <div class="jumbotron tengah">
+            <h1>Get Update !</h1>
+            <p class="lead">
+                Dapatkan  pemberitahuan update produk-produk terbaru kami, 
+                dengan berlangganan via email dibawah ini, dan dapatkan diskon menarik lainnya !
+             
+            </p>
+            <form>
+            <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                  <button type="button" class="btn btn-success btn-lg ">Subscribe </button>
+            </div>
+            </form>
+    </div>
+    </div>
+</div>
+<!-- akhir dari baris kelima -->
+
+
+<!-- baris keenam -->
+<div class="row">
+            <div class="col-sm-3 col-xs-6">
+                <div class="panel panel-success">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">About Us</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                        <li><span class="glyphicon glyphicon-th-large"></span> PT. Gherus </li>
+                        <li><span class="glyphicon glyphicon-road"></span> Jl. jalan Gg.XXX </li>
+                        <li><span class="glyphicon glyphicon-phone-alt"></span> 0819393939393 </li>
+                        <li><span class="glyphicon glyphicon-share-alt"></span> fb/gherus </li>
+                        <li><span class="glyphicon glyphicon-share-alt"></span> @Gherus </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <div class="panel panel-success">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Our Partner !</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                        <li><span class="glyphicon glyphicon-asterisk"></span> PT. Rap-Orap </li>
+                        <li><span class="glyphicon glyphicon-qrcode"></span> PT. Ghebuk </li>
+                        <li><span class="glyphicon glyphicon-refresh"></span> PT. Kocor </li>
+                        <li><span class="glyphicon glyphicon-leaf"></span> PT. Krepek Tette </li>
+                        <li><span class="glyphicon glyphicon-fire"></span> PT. Tapay </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <div class="panel panel-success">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Help Desk</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul> 
+                        <li><span class="glyphicon glyphicon-comment"></span> Need help ? </li>
+                        <li><span class="glyphicon glyphicon-comment"></span> Need help ? </li>
+                        <li><span class="glyphicon glyphicon-comment"></span> Need help ? </li>
+                        <li><span class="glyphicon glyphicon-comment"></span> Need help ? </li>
+                        <li><span class="glyphicon glyphicon-comment"></span> Need help ? </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <div class="panel panel-success">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Report a bug</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                        <li> Found a bug ? </li>
+                        <li> Report to us </li>
+                        <li> and get money </li>
+                        <li> Send email </li>
+                        <li> support@gherus.com </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+</div>
+<!-- akhir dari baris keenam -->
+Payment method
+<!-- baris ke enam -->
+<div class="row">
+    <div class="col-sm-12">
+        <img src="profile.png" class="img-responsive pull-right">
+    </div>
+</div>
+
+
+</div>
+<!-- AKHIR DARI CONTAINER -->
+
+
+<!-- modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header bg-success">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Keranjang Belanja Anda !</h4>
+        </div>
+        <div class="modal-body">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Ghebuk</th>
+        <th>Harga </th>
+        <th>Jumlah </th>
+        <th>Optional</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Krepek Tette</td>
+        <td>12.000</td>
+        <td>12</td>
+        <td>
+            <a href="#">
+            <span class="glyphicon glyphicon-plus-sign"></span>
+            </a>
+            <a href="#">
+            <span class="glyphicon glyphicon-minus-sign"></span>
+            </a>
+            <a href="#">
+            <span class="glyphicon glyphicon-remove-sign"></span>
+            </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Kocor</td>
+        <td>12.000</td>
+        <td>12</td>
+        <td>
+            <a href="#">
+            <span class="glyphicon glyphicon-plus-sign"></span>
+            </a>
+            <a href="#">
+            <span class="glyphicon glyphicon-minus-sign"></span>
+            </a>
+            <a href="#">
+            <span class="glyphicon glyphicon-remove-sign"></span>
+            </a>
+        </td>
+      </tr>
+      <tr>
+         <td>Nang-nginang</td>
+        <td>12.000</td>
+        <td>12</td>
+        <td>
+            <a href="#">
+            <span class="glyphicon glyphicon-plus-sign"></span>
+            </a>
+            <a href="#">
+            <span class="glyphicon glyphicon-minus-sign"></span>
+            </a>
+            <a href="#">
+            <span class="glyphicon glyphicon-remove-sign"></span>
+            </a>
+        </td>
+      </tr>
+      <tr>
+         <th>Total</th>
+        <th>36.000</th>
+        <th>36</th>
+        <td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+        </div>
+        <div class="modal-footer bg-success">
+          <button type="button" class="btn btn-warning" data-dismiss="modal">Check Out</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+       
+    </div>
+  </div>
+<!-- akhir dari modal -->
+
+
+</body>
+</html>
